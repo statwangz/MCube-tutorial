@@ -1,5 +1,5 @@
 Installation 
-=============
+============
 
 The R package **MCube** is publicly available at https://github.com/YangLabHKUST/MCube/ .
 
