@@ -3,11 +3,17 @@ Welcome to MCube's documentation!
 
 **MCube** is a unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies.
 
-Contents
---------
-
+Installion
+------------
 .. toctree::
+   :maxdepth: 2
 
-   Installion
-   Usage
-   Analysis
+Usage
+-------
+.. toctree::
+   :maxdepth: 2
+
+Analysis
+----------
+.. toctree::
+   :maxdepth: 3
