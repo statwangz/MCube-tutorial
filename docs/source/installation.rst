@@ -17,4 +17,4 @@ To conduct parallel computing, the R pacakge ``foreach`` (https://CRAN.R-project
 
 .. code-block:: r
 
-  install.packages(c("foreach", "iterators"))
+  install.packages("foreach")
