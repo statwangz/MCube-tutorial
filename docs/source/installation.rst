@@ -1,3 +1,7 @@
+============
+Installation
+============
+
 Install **MCube** from GitHub
 =============================
 
