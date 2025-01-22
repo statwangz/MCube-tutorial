@@ -12,7 +12,7 @@ Installation
 ------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    installation.rst
 
@@ -20,7 +20,7 @@ Usage
 -----
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    usage.rst
 
@@ -30,7 +30,7 @@ Real data analysis
 Code for reproducing the real data results presented in our paper
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    analysis/index.rst
 
