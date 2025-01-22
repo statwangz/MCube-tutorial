@@ -27,10 +27,8 @@ Usage
 Analysis
 --------
 
-Code for reproducing the results in our paper:
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    analysis/index.rst
 
