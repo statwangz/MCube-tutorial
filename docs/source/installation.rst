@@ -15,6 +15,7 @@ Suggested packages
 
 To conduct parallel computing, the R pacakges ``foreach`` (https://CRAN.R-project.org/package=foreach)
 and ``iterators`` (https://cran.r-project.org/package=iterators) are required:
+
 .. code-block:: r
 
   install.packages(c("foreach", "iterators"))
