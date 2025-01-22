@@ -2,7 +2,8 @@
 Welcome to MCube's documentation!
 =================================
 
-**MCube** is a unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies.
+**MCube** implements the methods in the **MMM** paper.
+**MMM** is a unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies.
 
 
 Contents
@@ -19,6 +20,7 @@ Reference
 =========
 
 If you find the ``MCube`` package or any of the source code in this repository useful for your work, please cite:
+
    | A unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies.
    | Zhiwei Wang, Yeqin Zeng, Ziyue Tan, Yuheng Chen, Xinrui Huang, Hongyu Zhao, Zhixiang Lin, and Can Yang.
    | 2025.
@@ -26,7 +28,7 @@ If you find the ``MCube`` package or any of the source code in this repository u
 Development
 ===========
 
-The package is developed by `Zhiwei Wang <https://sites.google.com/view/statwangz>`_.
+The R package ``MCube`` is developed by `Zhiwei Wang <https://sites.google.com/view/statwangz>`_.
 
 Contact
 =======
