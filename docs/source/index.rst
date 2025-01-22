@@ -1,15 +1,15 @@
-==================================
+=================================
 Welcome to MCube's documentation!
-==================================
+=================================
 
 **MCube** is a unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies.
 
 
 Contents
-=========
+========
 
 Installion
-------------
+----------
 
 .. toctree::
    :maxdepth: 2
@@ -17,7 +17,7 @@ Installion
    installion.rst
 
 Usage
--------
+-----
 
 .. toctree::
    :maxdepth: 2
@@ -25,7 +25,7 @@ Usage
    usage.rst
 
 Analysis
-----------
+--------
 
 Code for reproducing the results in our paper:
 
@@ -35,7 +35,7 @@ Code for reproducing the results in our paper:
    analysis/index.rst
 
 Reference
-==========
+=========
 
 If you find the **MCube** package or any of the source code in this repository useful for your work, please cite:
 ::
@@ -43,12 +43,12 @@ If you find the **MCube** package or any of the source code in this repository u
    Zhiwei Wang, Yeqin Zeng, Ziyue Tan, Yuheng Chen, Xinrui Huang, Hongyu Zhao, Zhixiang Lin, and Can Yang. A unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies. 2025.
 
 Development
-============
+===========
 
 The package is developed by `Zhiwei Wang`_.
 
 Contact
-========
+=======
 
 Please feel free to contact `Zhiwei Wang`_  or `Prof. Can Yang`_ if any inquiries.
 
