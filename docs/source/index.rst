@@ -5,16 +5,19 @@ Welcome to MCube's documentation!
 
 Installion
 ------------
+
 .. toctree::
    :maxdepth: 2
 
 Usage
 -------
+
 .. toctree::
    :maxdepth: 2
 
 Analysis
 ----------
+
 Code for reproducing the results in our paper:
 
 .. toctree::
