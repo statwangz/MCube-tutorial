@@ -1,8 +1,7 @@
-Visium human dorsolateral prefrontal cortex dataset
-====================================================
+Code for reproducing the results in our paper
+=============================================
 
 .. toctree::
    :maxdepth: 2
    
-   DLPFC_STitch3D
-   DLPFC_MCube
+   DLPFC/index.rst

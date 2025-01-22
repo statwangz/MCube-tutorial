@@ -45,7 +45,7 @@ If you find the **MCube** package or any of the source code in this repository u
 Development
 ===========
 
-The package is developed by `Zhiwei Wang`_.
+The package is developed by Zhiwei Wang.
 
 Contact
 =======
