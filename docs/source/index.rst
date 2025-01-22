@@ -24,8 +24,8 @@ Usage
 
    usage.rst
 
-Analysis
---------
+Real data analysis
+------------------
 
 .. toctree::
    :maxdepth: 3
@@ -37,7 +37,9 @@ Reference
 
 If you find the **MCube** package or any of the source code in this repository useful for your work, please cite:
 
-   Zhiwei Wang, Yeqin Zeng, Ziyue Tan, Yuheng Chen, Xinrui Huang, Hongyu Zhao, Zhixiang Lin, and Can Yang. A unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies. 2025.
+   Zhiwei Wang, Yeqin Zeng, Ziyue Tan, Yuheng Chen, Xinrui Huang, Hongyu Zhao, Zhixiang Lin, and Can Yang. 
+   A unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies. 
+   2025.
 
 Development
 ===========
