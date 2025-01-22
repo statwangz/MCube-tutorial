@@ -9,11 +9,15 @@ Installion
 .. toctree::
    :maxdepth: 2
 
+   installion.rst
+
 Usage
 -------
 
 .. toctree::
    :maxdepth: 2
+
+   usage.rst
 
 Analysis
 ----------
@@ -22,3 +26,5 @@ Code for reproducing the results in our paper:
 
 .. toctree::
    :maxdepth: 3
+
+   analysis/index.rst
