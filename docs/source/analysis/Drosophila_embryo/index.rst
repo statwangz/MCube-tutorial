@@ -5,4 +5,4 @@
    :maxdepth: 2
    
    Drosophila_embryo_STitch3D
-   Drosophila_embryo_STitch3D_MCube
+   Drosophila_embryo_MCube
