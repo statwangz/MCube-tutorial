@@ -1,5 +1,5 @@
-Code for reproducing the results in our paper
-=============================================
+Code for reproducing the real data results presented in our paper
+=================================================================
 
 .. toctree::
    :maxdepth: 2
