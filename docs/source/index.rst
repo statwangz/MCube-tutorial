@@ -8,8 +8,8 @@ Welcome to MCube's documentation!
 Contents
 ========
 
-Installion
-----------
+Installation
+------------
 
 .. toctree::
    :maxdepth: 2
@@ -37,14 +37,14 @@ Reference
 
 If you find the ``MCube`` package or any of the source code in this repository useful for your work, please cite:
 
-   Zhiwei Wang, Yeqin Zeng, Ziyue Tan, Yuheng Chen, Xinrui Huang, Hongyu Zhao, Zhixiang Lin, and Can Yang. 
-   A unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies. 
-   2025.
+   | A unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies.
+   | Zhiwei Wang, Yeqin Zeng, Ziyue Tan, Yuheng Chen, Xinrui Huang, Hongyu Zhao, Zhixiang Lin, and Can Yang.
+   | 2025.
 
 Development
 ===========
 
-The package is developed by Zhiwei Wang.
+The package is developed by `Zhiwei Wang <https://sites.google.com/view/statwangz>`_.
 
 Contact
 =======
