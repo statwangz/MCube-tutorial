@@ -17,7 +17,7 @@ Suggested packages
 ==================
 
 To conduct parallel computing,
-the R pacakges ``doParallel`` (https://CRAN.R-project.org/package=doParallel),
+the R packages ``doParallel`` (https://CRAN.R-project.org/package=doParallel),
 ``foreach`` (https://CRAN.R-project.org/package=foreach),
 and ``iterators`` (https://cran.r-project.org/package=iterators) are required:
 
