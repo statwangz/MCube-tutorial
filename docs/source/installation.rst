@@ -2,11 +2,10 @@
 Installation
 ============
 
-Install **MCube** from GitHub
+Install ``MCube`` from GitHub
 =============================
 
-The R package ``MCube`` is publicly available at https://github.com/YangLabHKUST/MCube/ .
-
+The R package ``MCube`` is publicly available at https://github.com/YangLabHKUST/MCube/.
 You can install the development version of ``MCube`` from `GitHub <https://github.com/>`_:
 
 .. code-block:: r
@@ -17,8 +16,11 @@ You can install the development version of ``MCube`` from `GitHub <https://githu
 Suggested packages
 ==================
 
-To conduct parallel computing, the R pacakges ``foreach`` (https://CRAN.R-project.org/package=foreach) is required:
+To conduct parallel computing,
+the R pacakges ``doParallel`` (https://CRAN.R-project.org/package=doParallel),
+``foreach`` (https://CRAN.R-project.org/package=foreach),
+and ``iterators`` (https://cran.r-project.org/package=iterators) are required:
 
 .. code-block:: r
 
-  install.packages("foreach")
+  install.packages(c("doParallel", "foreach", "iterators"))
