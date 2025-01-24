@@ -17,7 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinxcontrib.bibtex', # Manage references
+    'sphinxcontrib.bibtex', # Manage bibliography
     'nbsphinx', # Jupyter Notebook tools for Sphinx
 ]
 
@@ -38,3 +38,4 @@ epub_show_urls = 'footnote'
 
 # References
 bibtex_bibfiles = ['refs.bib']
+bibtex_bibliography_header = ".. rubric:: References"
