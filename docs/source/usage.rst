@@ -28,4 +28,5 @@ With the deconvolution results, we can identify cell-type-specific SVGs by apply
 Please see more examples in :doc:`/analysis/index`.
 
 .. bibliography::
+    :filter: {"usage"} & docnames
 

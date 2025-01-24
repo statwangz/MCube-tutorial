@@ -13,3 +13,4 @@ the GEO DataSets database with accession number `GSE243280 <https://www.ncbi.nlm
    breast_cancer_NicheDE
 
 .. bibliography::
+   :filter: {"index"} & docnames

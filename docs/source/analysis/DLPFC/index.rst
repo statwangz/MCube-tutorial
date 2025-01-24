@@ -14,3 +14,4 @@ the GEO DataSets database with accession number `GSE144136 <https://www.ncbi.nlm
    DLPFC_MCube
 
 .. bibliography::
+   :filter: {"index"} & docnames
