@@ -2,7 +2,7 @@
 Welcome to MCube's documentation!
 =================================
 
-**MCube** implements the methods in the **MMM** paper.
+The R package ``MCube`` implements the methods in the **MMM** paper.
 **MMM** is a unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies.
 
 
