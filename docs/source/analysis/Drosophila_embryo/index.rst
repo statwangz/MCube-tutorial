@@ -1,6 +1,6 @@
-============================
-3D *Drosophila* embryo model
-============================
+===================
+*Drosophila* embryo
+===================
 
 The *Drosophila* embryo dataset profiled by Stereo-seq :cite:p:`wang2022high`` is available at
 the Flysta3D database (https://db.cngb.org/stomics/flysta3d/).
