@@ -2,9 +2,6 @@
 Human dorsolateral prefrontal cortex
 ====================================
 
-Data availability
-=================
-
 The human DLPFC dataset profiled by 10x Visium :cite:p:`maynard2021transcriptome` is available at
 the project website (https://research.libd.org/spatialLIBD/).
 The human DLPFC snRNA-seq dataset profiled by 10x Genomics Chromium :cite:p:`nagy2020single` is available at
