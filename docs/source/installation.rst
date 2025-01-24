@@ -11,13 +11,13 @@ You can install the development version of ``MCube`` from `GitHub <https://githu
 
 .. code-block:: r
 
-  # install.packages("pak")
-  pak::pak("YangLabHKUST/MCube")
+  # install.packages("devtools")
+  devtools::install_github("YangLabHKUST/MCube")
 
-Suggested package
-=================
+Suggested packages
+==================
 
-To conduct parallel computing, the R pacakge ``foreach`` (https://CRAN.R-project.org/package=foreach) is required:
+To conduct parallel computing, the R pacakges ``foreach`` (https://CRAN.R-project.org/package=foreach) is required:
 
 .. code-block:: r
 
