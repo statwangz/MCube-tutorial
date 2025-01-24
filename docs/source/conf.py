@@ -35,3 +35,6 @@ html_theme = 'press'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# References
+bibtex_bibfiles = ['refs.bib']
