@@ -7,7 +7,7 @@ Required data
 
 * Spatial transcriptomic (ST) data: gene expression + spatial coordinates;
 
-* Annotated single-cell RNA-sequencing (scRNA-seq) data: gene expression + cell type label.
+* Annotated single-cell RNA-sequencing (scRNA-seq) data: gene expression + cell type labels.
 
 Cell type deconvolution
 =======================
