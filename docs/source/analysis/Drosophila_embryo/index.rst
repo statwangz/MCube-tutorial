@@ -14,4 +14,4 @@ the GEO DataSets database with accession number `GSE190149 <https://www.ncbi.nlm
    Drosophila_embryo_MCube
 
 .. bibliography::
-   :filter: {"index"} & docnames
+   :filter: {"analysis/Drosophila_embryo/index"} & docnames
