@@ -8,7 +8,7 @@ The *Drosophila* embryo sci-RNA-seq3 dataset :cite:p:`calderon2022continuum` is 
 the GEO DataSets database with accession number `GSE190149 <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190149>`_.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
    Drosophila_embryo_STitch3D
    Drosophila_embryo_MCube
