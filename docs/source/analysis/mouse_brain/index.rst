@@ -10,7 +10,7 @@ The adult mouse brain snRNA-seq dataset :cite:p:`kleshchevnikov2022cell2location
 ArrayExpress with accession number `E-MTAB-11115 <https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-11115>`_.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
    mouse_brain_STitch3D
    mouse_brain_MCube
