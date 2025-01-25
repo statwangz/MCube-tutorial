@@ -1,6 +1,6 @@
-=================
-Adult mouse brain
-=================
+==========================================================
+Multiple adult mouse brain datasets from different sources
+==========================================================
 
 The adult mouse brain dataset profiled by 10x Visium :cite:p:`you2024systematic` is available at 
 the project website (https://genographix.com/).
@@ -16,4 +16,4 @@ ArrayExpress with accession number `E-MTAB-11115 <https://www.ebi.ac.uk/biostudi
    mouse_brain_MCube
 
 .. bibliography::
-   :filter: {"index"} & docnames
+   :filter: {"analysis/mouse_brain/index"} & docnames
