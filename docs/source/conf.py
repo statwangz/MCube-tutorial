@@ -19,7 +19,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinxcontrib.bibtex', # Manage bibliography
     'nbsphinx', # Jupyter Notebook tools for Sphinx
-    'sphinx_gallery.gen_gallery', # plotly
+    # 'sphinx_gallery.gen_gallery', # plotly
 ]
 
 intersphinx_mapping = {
@@ -41,10 +41,6 @@ epub_show_urls = 'footnote'
 bibtex_bibfiles = ['refs.bib']
 bibtex_bibliography_header = ".. rubric:: References"
 
-# plotly library
+# plotly renderer
 import plotly.io as pio
 pio.renderers.default = 'sphinx_gallery'
-
-sphinx_gallery_conf = {
-    'plot_gallery': 'False',
-}
