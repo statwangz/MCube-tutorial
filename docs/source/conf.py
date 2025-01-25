@@ -40,3 +40,6 @@ epub_show_urls = 'footnote'
 # References
 bibtex_bibfiles = ['refs.bib']
 bibtex_bibliography_header = ".. rubric:: References"
+
+import plotly.io as pio
+pio.renderers.default = 'sphinx_gallery'
