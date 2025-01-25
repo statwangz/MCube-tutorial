@@ -46,6 +46,5 @@ import plotly.io as pio
 pio.renderers.default = 'sphinx_gallery'
 
 sphinx_gallery_conf = {
-    ...
     'plot_gallery': 'False',
 }
