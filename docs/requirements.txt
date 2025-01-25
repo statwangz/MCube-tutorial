@@ -3,4 +3,4 @@ sphinx-press-theme
 sphinxcontrib-bibtex # Bibliography
 nbsphinx # Jupyter Notebook tools for Sphinx
 plotly # 3D visualization
-sphinx-gallery # Display the figure made with the plotly library
+sphinx-gallery # Display the figures made with the plotly library
