@@ -1,6 +1,6 @@
-===================
-Human breast cancer
-===================
+==================================
+Xenium human breast cancer dataset
+==================================
 
 The human breast cancer datasets profiled by 10x Xenium and scFFPE-seq :cite:p:`janesick2023high` are both available at
 the GEO DataSets database with accession number `GSE243280 <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243280>`_.
@@ -13,4 +13,4 @@ the GEO DataSets database with accession number `GSE243280 <https://www.ncbi.nlm
    breast_cancer_NicheDE
 
 .. bibliography::
-   :filter: {"index"} & docnames
+   :filter: {"analysis/breast_cancer/index"} & docnames
