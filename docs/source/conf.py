@@ -31,7 +31,8 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'press'
+html_theme = 'sphinx_rtd_theme'
+# html_theme = 'press'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
@@ -39,7 +40,3 @@ epub_show_urls = 'footnote'
 # References
 bibtex_bibfiles = ['refs.bib']
 bibtex_bibliography_header = ".. rubric:: References"
-
-# plotly renderer
-import plotly.io as pio
-pio.renderers.default = 'plotly_mimetype'
