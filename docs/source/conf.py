@@ -19,7 +19,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinxcontrib.bibtex', # Manage bibliography
     'nbsphinx', # Jupyter Notebook tools for Sphinx
-    # 'sphinx_gallery.gen_gallery', # plotly
+    'sphinx_gallery.gen_gallery', # Display the figures made with the plotly library
 ]
 
 intersphinx_mapping = {
