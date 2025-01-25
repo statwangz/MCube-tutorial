@@ -31,8 +31,8 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
-# html_theme = 'press'
+# html_theme = 'sphinx_rtd_theme'
+html_theme = 'press'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
@@ -40,3 +40,6 @@ epub_show_urls = 'footnote'
 # References
 bibtex_bibfiles = ['refs.bib']
 bibtex_bibliography_header = ".. rubric:: References"
+
+def setup(app):
+    app.add_javascript('https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js')
