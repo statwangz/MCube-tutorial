@@ -1,6 +1,6 @@
 sphinx==7.1.2
-# sphinx-rtd-theme
-sphinx-press-theme
+sphinx-rtd-theme
+# sphinx-press-theme
 sphinxcontrib-bibtex # Bibliography
 nbsphinx # Jupyter Notebook tools for Sphinx
 plotly # 3D visualization
