@@ -41,5 +41,7 @@ epub_show_urls = 'footnote'
 bibtex_bibfiles = ['refs.bib']
 bibtex_bibliography_header = ".. rubric:: References"
 
-def setup(app):
-    app.add_javascript('https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js')
+html_js_files = [
+    "require.min.js",  # Add to your _static
+    "custom.js",
+]
