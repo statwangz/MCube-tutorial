@@ -8,7 +8,7 @@ The human DLPFC snRNA-seq dataset profiled by 10x Genomics Chromium :cite:p:`nag
 the GEO DataSets database with accession number `GSE144136 <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144136>`_.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
    DLPFC_STitch3D
    DLPFC_MCube
