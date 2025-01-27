@@ -2,6 +2,9 @@
 Usage
 =====
 
+Pipeline
+========
+
 .. figure:: figures/pipeline.png
    :width: 640px
    :align: center
