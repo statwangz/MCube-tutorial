@@ -2,6 +2,11 @@
 Usage
 =====
 
+.. figure:: figures/pipeline.png
+   :width: 640px
+   :align: center
+   :alt: Pipeline
+
 Required data
 =============
 
@@ -26,11 +31,6 @@ Cell-type-specific SVG identification
 
 With the deconvolution results, we can identify cell-type-specific SVGs by applying ``MCube``.
 Please see more examples in :doc:`/analysis/index`.
-
-.. figure:: figures/pipeline.png
-   :width: 640px
-   :align: center
-   :alt: Pipeline
 
 .. bibliography::
     :filter: {"usage"} & docnames
