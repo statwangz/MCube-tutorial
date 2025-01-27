@@ -2,8 +2,8 @@
 Usage
 =====
 
-Pipeline
-========
+Pipeline overview
+=================
 
 .. figure:: figures/pipeline.png
    :width: 640px
