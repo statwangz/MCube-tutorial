@@ -28,7 +28,8 @@ With the deconvolution results, we can identify cell-type-specific SVGs by apply
 Please see more examples in :doc:`/analysis/index`.
 
 .. figure:: figures/pipeline.png
-   :scale: 50 %
+   :width: 512px
+   :align: center
    :alt: Pipeline
 
 .. bibliography::
