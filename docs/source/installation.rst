@@ -2,8 +2,8 @@
 Installation
 ============
 
-Install ``MCube`` from GitHub
-=============================
+Installing ``MCube`` from GitHub
+================================
 
 The R package ``MCube`` is publicly available at https://github.com/YangLabHKUST/MCube/.
 You can install the development version of ``MCube`` from `GitHub <https://github.com/>`_:
