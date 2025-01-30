@@ -3,4 +3,3 @@ sphinx==7.1.2
 sphinx-press-theme
 sphinxcontrib-bibtex # Bibliography
 nbsphinx # Jupyter Notebook tools for Sphinx
-plotly # 3D visualizatio
