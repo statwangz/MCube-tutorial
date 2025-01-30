@@ -1,7 +1,4 @@
 ---
-title: "3D visualization in the Allen Mouse Brain Common Coordinate Framework"
-author: "WANG Zhiwei"
-date: "2025-01-30"
 output: html_document
 ---
 
@@ -72,7 +69,7 @@ spheres3d(plot_df$AP.paxTOallen - 530/2,
           plot_df$ML * 1000/25,
           col = "brown1", radius = 5, alpha = plot_df$proportion)
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype, ".pdf")), fmt = "pdf")
-snapshot3d(file.path(RESULT_PATH, paste0(celltype, ".png")), fmt = "png")
+snapshot3d(file.path(RESULT_PATH, paste0(celltype, ".png")), fmt = "png", webshot = FALSE)
 ```
 
 ```{r}
@@ -105,7 +102,7 @@ for (l in 1:length(rel_expr_level_all)){
             col = palettes[l], radius = 5, alpha = 0.8)
 }
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
-snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png")
+snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
 ```
 
 ```{r}
@@ -138,7 +135,7 @@ for (l in 1:length(rel_expr_level_all)){
             col = palettes[l], radius = 5, alpha = 0.8)
 }
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
-snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png")
+snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
 ```
 
 ## Cell type Inh_1
@@ -173,7 +170,7 @@ spheres3d(plot_df$AP.paxTOallen - 530/2,
           plot_df$ML * 1000/25,
           col = "brown1", radius = 5, alpha = plot_df$proportion)
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype, ".pdf")), fmt = "pdf")
-snapshot3d(file.path(RESULT_PATH, paste0(celltype, ".png")), fmt = "png")
+snapshot3d(file.path(RESULT_PATH, paste0(celltype, ".png")), fmt = "png", webshot = FALSE)
 ```
 
 ```{r}
@@ -206,7 +203,7 @@ for (l in 1:length(rel_expr_level_all)){
             col = palettes[l], radius = 5, alpha = 0.8)
 }
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
-snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png")
+snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
 ```
 
 ```{r}
@@ -239,5 +236,5 @@ for (l in 1:length(rel_expr_level_all)){
             col = palettes[l], radius = 5, alpha = 0.8)
 }
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
-snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png")
+snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
 ```
