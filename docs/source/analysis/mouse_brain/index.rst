@@ -14,7 +14,9 @@ ArrayExpress with accession number `E-MTAB-11115 <https://www.ebi.ac.uk/biostudi
    
    mouse_brain_STitch3D
    mouse_brain_MCube
-   mouse_brain_3D_visualization
+
+.. raw:: html
+   :file: mouse_brain_3D_visualization.html
 
 .. bibliography::
    :filter: {"analysis/mouse_brain/index"} & docnames
