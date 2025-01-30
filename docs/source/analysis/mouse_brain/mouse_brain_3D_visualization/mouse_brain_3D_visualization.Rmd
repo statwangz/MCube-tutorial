@@ -61,6 +61,7 @@ plot_df <- merge(spots.table, plot_df, by = c("spot"))
 
 ```{r webgl=TRUE}
 open3d(windowRect = c(0, 0, 1024, 1024))
+par3d(persp)
 view3d(userMatrix = matrix(userMatrix, byrow = TRUE, nrow = 4))
 drawScene.rgl(list(VOLUMESMALL))
 
