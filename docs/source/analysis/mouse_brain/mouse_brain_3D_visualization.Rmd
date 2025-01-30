@@ -1,0 +1,223 @@
+---
+title: "3D visualization in the Allen Mouse Brain Common Coordinate Framework"
+author: "WANG Zhiwei"
+date: "2025-01-30"
+output: html_document
+---
+
+Here, we provide the interactive 3D analysis results in the Allen Mouse Brain Common Coordinate Framework (CCFv3).
+
+```{r}
+library(rgl)
+library(misc3d)
+library(stringr)
+
+knitr::knit_hooks$set(webgl = hook_webgl)
+```
+
+```{r}
+DATA_PATH <- "~/Research/Projects/MMM/plot3D/data/mouse_brain"
+RESULT_PATH <- "~/Research/Projects/MMM/plot3D/results/mouse_brain"
+```
+
+```{r}
+# 3D coordinates and model are based on CCFv3
+load(file.path(DATA_PATH, "spotstable.RData"))
+load(file.path(DATA_PATH, "VOLUMESMALL.RData"))
+load(file.path(DATA_PATH, "VOLUME.RData"))
+plot3D_data <- readRDS(file.path(RESULT_PATH, "plot3D_data.rds"))
+```
+
+```{r}
+# demo_celltypes <- c("Ext_Thal_1", "Inh_1")
+# demo_genes <- list(
+#     Ext_Thal_1 = c("Pcp4", "Nrxn3"),
+#     Inh_1 = c("Calb1", "Nsf")
+# )
+# demo_celltype_gene_pairs <- c(
+#     paste0(demo_celltypes[1], "_", demo_genes[[1]]),
+#     paste0(demo_celltypes[2], "_", demo_genes[[2]])
+# )
+```
+
+## Cell type Ext_Thal_1
+
+```{r}
+celltype <- "Ext_Thal_1"
+```
+
+```{r}
+gene <- "Pcp4"
+celltype_gene_pair <- paste0(celltype, "_", gene)
+
+u <- plot3D_data$null_models[[celltype_gene_pair]]$u[, celltype]
+rel_expr_level <- ifelse(u >= 0, 1, -1)
+rel_expr_level_all <-c(-1, 1)
+
+plot_df <- data.frame(
+  spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
+  rel_expr_level = rel_expr_level
+)
+plot_df$spot <- str_split_fixed(plot_df$spot, "-", 2)[, 1]
+
+spots.table$spot <- rownames(spots.table)
+plot_df <- merge(spots.table, plot_df, by = c("spot"))
+```
+
+```{r webgl=TRUE}
+open3d(windowRect = c(0, 0, 720, 720))
+
+userMatrix <- c(
+  0.5181192, 0.07642514,  0.8650988,  0.0000000,
+  -0.1146522, -0.98264998, 0.1421560, 0.0000000,
+  0.8820438,  -0.16034263, -0.4810362,  0.0000000,
+  0.0000000, 0.0000000, 0.0000000, 1.0000000
+)
+
+view3d(userMatrix = matrix(userMatrix, byrow = TRUE, nrow = 4))
+drawScene.rgl(list(VOLUMESMALL))
+
+palettes = c("#32CD32", "#FF69B4")
+for (l in 1:length(rel_expr_level_all)){
+  spots_idx <- (plot_df$rel_expr_level == rel_expr_level_all[l])
+  spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
+            -plot_df[spots_idx, ]$DV * 1000/25 - 320/2, 
+            plot_df[spots_idx, ]$ML * 1000/25, 
+            col = palettes[l], radius = 5, alpha = 1)
+}
+rgl.postscript(file.path(RESULT_PATH, celltype_gene_pair, ".pdf"), fmt = "pdf")
+```
+
+```{r}
+gene <- "Nrxn3"
+celltype_gene_pair <- paste0(celltype, "_", gene)
+
+u <- plot3D_data$null_models[[celltype_gene_pair]]$u[, celltype]
+rel_expr_level <- ifelse(u >= 0, 1, -1)
+rel_expr_level_all <-c(-1, 1)
+
+plot_df <- data.frame(
+  spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
+  rel_expr_level = rel_expr_level
+)
+plot_df$spot <- str_split_fixed(plot_df$spot, "-", 2)[, 1]
+
+spots.table$spot <- rownames(spots.table)
+plot_df <- merge(spots.table, plot_df, by = c("spot"))
+```
+
+```{r webgl=TRUE}
+open3d(windowRect = c(0, 0, 720, 720))
+
+par3d(persp)
+
+userMatrix <- c(
+  0.5181192, 0.07642514,  0.8650988,  0.0000000,
+  -0.1146522, -0.98264998, 0.1421560, 0.0000000,
+  0.8820438,  -0.16034263, -0.4810362,  0.0000000,
+  0.0000000, 0.0000000, 0.0000000, 1.0000000
+)
+
+view3d(userMatrix = matrix(userMatrix, byrow = TRUE, nrow = 4))
+drawScene.rgl(list(VOLUMESMALL))
+
+palettes = c("#32CD32", "#FF69B4")
+for (l in 1:length(rel_expr_level_all)){
+  spots_idx <- (plot_df$rel_expr_level == rel_expr_level_all[l])
+  spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
+            -plot_df[spots_idx, ]$DV * 1000/25 - 320/2, 
+            plot_df[spots_idx, ]$ML * 1000/25, 
+            col = palettes[l], radius = 5, alpha = 1)
+}
+rgl.postscript(file.path(RESULT_PATH, celltype_gene_pair, ".pdf"), fmt = "pdf")
+```
+
+## Cell type Inh_1
+
+```{r}
+celltype <- "Inh_1"
+```
+
+```{r}
+gene <- "Calb1"
+celltype_gene_pair <- paste0(celltype, "_", gene)
+
+u <- plot3D_data$null_models[[celltype_gene_pair]]$u[, celltype]
+rel_expr_level <- ifelse(u >= 0, 1, -1)
+rel_expr_level_all <-c(-1, 1)
+
+plot_df <- data.frame(
+  spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
+  rel_expr_level = rel_expr_level
+)
+plot_df$spot <- str_split_fixed(plot_df$spot, "-", 2)[, 1]
+
+spots.table$spot <- rownames(spots.table)
+plot_df <- merge(spots.table, plot_df, by = c("spot"))
+```
+
+```{r webgl=TRUE}
+open3d(windowRect = c(0, 0, 720, 720))
+
+userMatrix <- c(
+  0.9926825, -0.0931409,  0.2503037,  0.0000000,
+  -0.2543069, -0.6830904, 0.6846281, 0.0000000,
+  0.0974864,  -0.7224016, -0.6845675,  0.0000000,
+  0.0000000, 0.0000000, 0.0000000, 1.0000000
+)
+
+view3d(userMatrix = matrix(userMatrix, byrow = TRUE, nrow = 4))
+drawScene.rgl(list(VOLUMESMALL))
+
+palettes = c("#32CD32", "#FF69B4")
+for (l in 1:length(rel_expr_level_all)){
+  spots_idx <- (plot_df$rel_expr_level == rel_expr_level_all[l])
+  spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
+            -plot_df[spots_idx, ]$DV * 1000/25 - 320/2, 
+            plot_df[spots_idx, ]$ML * 1000/25, 
+            col = palettes[l], radius = 5, alpha = 1)
+}
+rgl.postscript(file.path(RESULT_PATH, celltype_gene_pair, ".pdf"), fmt = "pdf")
+```
+
+```{r}
+gene <- "Nsf"
+celltype_gene_pair <- paste0(celltype, "_", gene)
+
+u <- plot3D_data$null_models[[celltype_gene_pair]]$u[, celltype]
+rel_expr_level <- ifelse(u >= 0, 1, -1)
+rel_expr_level_all <-c(-1, 1)
+
+plot_df <- data.frame(
+  spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
+  rel_expr_level = rel_expr_level
+)
+plot_df$spot <- str_split_fixed(plot_df$spot, "-", 2)[, 1]
+
+spots.table$spot <- rownames(spots.table)
+plot_df <- merge(spots.table, plot_df, by = c("spot"))
+```
+
+```{r webgl=TRUE}
+open3d(windowRect = c(0, 0, 720, 720))
+
+userMatrix <- c(
+  0.9926825, -0.0931409,  0.2503037,  0.0000000,
+  -0.2543069, -0.6830904, 0.6846281, 0.0000000,
+  0.0974864,  -0.7224016, -0.6845675,  0.0000000,
+  0.0000000, 0.0000000, 0.0000000, 1.0000000
+)
+
+view3d(userMatrix = matrix(userMatrix, byrow = TRUE, nrow = 4))
+drawScene.rgl(list(VOLUMESMALL))
+
+palettes = c("#32CD32", "#FF69B4")
+for (l in 1:length(rel_expr_level_all)){
+  spots_idx <- (plot_df$rel_expr_level == rel_expr_level_all[l])
+  spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
+            -plot_df[spots_idx, ]$DV * 1000/25 - 320/2, 
+            plot_df[spots_idx, ]$ML * 1000/25, 
+            col = palettes[l], radius = 5, alpha = 1)
+}
+rgl.postscript(file.path(RESULT_PATH, celltype_gene_pair, ".pdf"), fmt = "pdf")
+```
