@@ -68,6 +68,9 @@ spheres3d(plot_df$AP.paxTOallen - 530/2,
           -plot_df$DV * 1000/25 - 320/2,
           plot_df$ML * 1000/25,
           col = "brown1", radius = 5, alpha = plot_df$proportion)
+```
+
+```{r}
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype, ".png")), fmt = "png", webshot = FALSE)
 ```
