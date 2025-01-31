@@ -1,17 +1,23 @@
 ---
-title: "&#32;"
-output: html_document
+title: '&#32;'
+output: html_notebook
 ---
+
+<!-- mouse_brain_3D_visualization.nb.html is generated from mouse_brain_3D_visualization.Rmd. Please edit that file -->
 
 Here, we provide the interactive 3D analysis results in the Allen Mouse Brain Common Coordinate Framework (CCFv3) (<https://doi.org/10.1038/s41593-017-0027-7>).
 
-Note: `rgl.postscript` does not support opacity feature, thus `alpha` can only be set as 1 when using `rgl.postscript`. Sometimes `rgl.postscript` cannot capture the color correctly.
+**Note**:
+
+1. The `*.nb.html` file is generated from `*.Rmd` file.
+
+2. `rgl.postscript` does not support opacity feature, thus `alpha` can only be set as 1 when using `rgl.postscript` to save the screenshot.
+
+3. Sometimes `rgl.postscript` cannot capture the color correctly.
 
 ```{r}
-library(rgl) 
-library(misc3d) 
-library(stringr) 
-
+library(rgl)
+library(misc3d)
 knitr::knit_hooks$set(webgl = hook_webgl)
 ```
 
@@ -56,7 +62,7 @@ plot_df <- data.frame(
   spot = rownames(plot3D_data$proportion)[spots],
   proportion = plot3D_data$proportion[spots, celltype]
 )
-plot_df$spot <- str_split_fixed(plot_df$spot, "-", 2)[, 1]
+plot_df$spot <- stringr::str_split_fixed(plot_df$spot, "-", 2)[, 1]
 plot_df <- merge(spots.table, plot_df, by = c("spot"))
 ```
 
@@ -86,7 +92,7 @@ plot_df <- data.frame(
   spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
   rel_expr_level = rel_expr_level
 )
-plot_df$spot <- str_split_fixed(plot_df$spot, "-", 2)[, 1]
+plot_df$spot <- stringr::str_split_fixed(plot_df$spot, "-", 2)[, 1]
 plot_df <- merge(spots.table, plot_df, by = c("spot"))
 ```
 
@@ -119,7 +125,7 @@ plot_df <- data.frame(
   spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
   rel_expr_level = rel_expr_level
 )
-plot_df$spot <- str_split_fixed(plot_df$spot, "-", 2)[, 1]
+plot_df$spot <- stringr::str_split_fixed(plot_df$spot, "-", 2)[, 1]
 plot_df <- merge(spots.table, plot_df, by = c("spot"))
 ```
 
@@ -158,7 +164,7 @@ plot_df <- data.frame(
   spot = rownames(plot3D_data$proportion)[spots],
   proportion = plot3D_data$proportion[spots, celltype]
 )
-plot_df$spot <- str_split_fixed(plot_df$spot, "-", 2)[, 1]
+plot_df$spot <- stringr::str_split_fixed(plot_df$spot, "-", 2)[, 1]
 plot_df <- merge(spots.table, plot_df, by = c("spot"))
 ```
 
@@ -188,7 +194,7 @@ plot_df <- data.frame(
   spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
   rel_expr_level = rel_expr_level
 )
-plot_df$spot <- str_split_fixed(plot_df$spot, "-", 2)[, 1]
+plot_df$spot <- stringr::str_split_fixed(plot_df$spot, "-", 2)[, 1]
 plot_df <- merge(spots.table, plot_df, by = c("spot"))
 ```
 
@@ -221,7 +227,7 @@ plot_df <- data.frame(
   spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
   rel_expr_level = rel_expr_level
 )
-plot_df$spot <- str_split_fixed(plot_df$spot, "-", 2)[, 1]
+plot_df$spot <- stringr::str_split_fixed(plot_df$spot, "-", 2)[, 1]
 plot_df <- merge(spots.table, plot_df, by = c("spot"))
 ```
 
