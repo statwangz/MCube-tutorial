@@ -3,4 +3,4 @@
 =====================================================================
 
 .. raw:: html
-   :file: mouse_brain_3D_visualization.html
+   :file: mouse_brain_3D_visualization.nb.html
