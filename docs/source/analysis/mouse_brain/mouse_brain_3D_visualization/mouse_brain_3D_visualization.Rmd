@@ -63,7 +63,6 @@ plot_df <- merge(spots.table, plot_df, by = c("spot"))
 
 ```{r webgl=TRUE}
 open3d(windowRect = c(0, 0, 1024, 1024))
-par3d(persp)
 view3d(userMatrix = matrix(userMatrix, byrow = TRUE, nrow = 4))
 drawScene.rgl(list(VOLUMESMALL))
 
@@ -71,10 +70,7 @@ spheres3d(plot_df$AP.paxTOallen - 530/2,
           -plot_df$DV * 1000/25 - 320/2,
           plot_df$ML * 1000/25,
           col = "brown1", radius = 5,
-          alpha = 0.5 * plot_df$proportion + 0.5)
-```
-
-```{r}
+          alpha = 0.75 * plot_df$proportion + 0.25)
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype, ".png")), fmt = "png", webshot = FALSE)
 ```
@@ -106,7 +102,7 @@ for (l in 1:length(rel_expr_level_all)){
   spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
             -plot_df[spots_idx, ]$DV * 1000/25 - 320/2, 
             plot_df[spots_idx, ]$ML * 1000/25, 
-            col = palettes[l], radius = 5, alpha = 0.8)
+            col = palettes[l], radius = 5, alpha = 0.75)
 }
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
@@ -139,7 +135,7 @@ for (l in 1:length(rel_expr_level_all)){
   spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
             -plot_df[spots_idx, ]$DV * 1000/25 - 320/2, 
             plot_df[spots_idx, ]$ML * 1000/25, 
-            col = palettes[l], radius = 5, alpha = 0.8)
+            col = palettes[l], radius = 5, alpha = 0.75)
 }
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
@@ -176,7 +172,7 @@ spheres3d(plot_df$AP.paxTOallen - 530/2,
           -plot_df$DV * 1000/25 - 320/2,
           plot_df$ML * 1000/25,
           col = "brown1", radius = 5,
-          alpha = 0.5 * plot_df$proportion + 0.5)
+          alpha = 0.75 * plot_df$proportion + 0.25)
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype, ".png")), fmt = "png", webshot = FALSE)
 ```
@@ -208,7 +204,7 @@ for (l in 1:length(rel_expr_level_all)){
   spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
             -plot_df[spots_idx, ]$DV * 1000/25 - 320/2, 
             plot_df[spots_idx, ]$ML * 1000/25, 
-            col = palettes[l], radius = 5, alpha = 0.8)
+            col = palettes[l], radius = 5, alpha = 0.75)
 }
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
@@ -241,7 +237,7 @@ for (l in 1:length(rel_expr_level_all)){
   spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
             -plot_df[spots_idx, ]$DV * 1000/25 - 320/2, 
             plot_df[spots_idx, ]$ML * 1000/25, 
-            col = palettes[l], radius = 5, alpha = 0.8)
+            col = palettes[l], radius = 5, alpha = 0.75)
 }
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
