@@ -7,6 +7,8 @@ Here, we provide the interactive 3D analysis results in the Allen Mouse Brain Co
 Note: `rgl.postscript` does not support opacity feature, thus `alpha` can only be set as 1 when using `rgl.postscript`. Sometimes `rgl.postscript` cannot capture the color correctly.
 
 ```{r}
+rm(list = ls())
+options(warn=-1)
 library(rgl)
 library(misc3d)
 library(stringr)
@@ -22,7 +24,7 @@ RESULT_PATH <- "~/Research/Projects/MMM/plot3D/results/mouse_brain"
 ```{r}
 # 3D coordinates and model are based on CCFv3
 load(file.path(DATA_PATH, "VOLUMESMALL.RData"))
-load(file.path(DATA_PATH, "VOLUME.RData"))
+# load(file.path(DATA_PATH, "VOLUME.RData"))
 load(file.path(DATA_PATH, "spotstable.RData"))
 spots.table$spot <- rownames(spots.table)
 
@@ -68,7 +70,8 @@ drawScene.rgl(list(VOLUMESMALL))
 spheres3d(plot_df$AP.paxTOallen - 530/2,
           -plot_df$DV * 1000/25 - 320/2,
           plot_df$ML * 1000/25,
-          col = "brown1", radius = 5, alpha = plot_df$proportion)
+          col = "brown1", radius = 5,
+          alpha = 0.5 * plot_df$proportion + 0.5)
 ```
 
 ```{r}
@@ -172,7 +175,8 @@ drawScene.rgl(list(VOLUMESMALL))
 spheres3d(plot_df$AP.paxTOallen - 530/2,
           -plot_df$DV * 1000/25 - 320/2,
           plot_df$ML * 1000/25,
-          col = "brown1", radius = 5, alpha = plot_df$proportion)
+          col = "brown1", radius = 5,
+          alpha = 0.5 * plot_df$proportion + 0.5)
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype, ".png")), fmt = "png", webshot = FALSE)
 ```
