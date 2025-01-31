@@ -1,5 +1,6 @@
 sphinx==7.1.2
 sphinx-rtd-theme
 # sphinx-press-theme
+sphinx-copybutton
 sphinxcontrib-bibtex # Bibliography
 nbsphinx # Jupyter Notebook tools for Sphinx
