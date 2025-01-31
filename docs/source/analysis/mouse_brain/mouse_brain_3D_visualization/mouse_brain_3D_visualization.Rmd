@@ -1,9 +1,9 @@
 ---
 title: '&#32;'
-output: html_notebook
+output: html_document
 ---
 
-<!-- mouse_brain_3D_visualization.nb.html is generated from mouse_brain_3D_visualization.Rmd. Please edit that file -->
+<!-- mouse_brain_3D_visualization.html is generated from mouse_brain_3D_visualization.Rmd. Please edit that file -->
 
 Here, we provide the interactive 3D analysis results in the Allen Mouse Brain Common Coordinate Framework (CCFv3) (<https://doi.org/10.1038/s41593-017-0027-7>).
 
