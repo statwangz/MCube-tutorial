@@ -1,4 +1,5 @@
 ---
+title: "&#32;"
 output: html_document
 ---
 
@@ -7,8 +8,6 @@ Here, we provide the interactive 3D analysis results in the Allen Mouse Brain Co
 Note: `rgl.postscript` does not support opacity feature, thus `alpha` can only be set as 1 when using `rgl.postscript`. Sometimes `rgl.postscript` cannot capture the color correctly.
 
 ```{r}
-rm(list = ls())
-options(warn=-1)
 library(rgl)
 library(misc3d)
 library(stringr)
