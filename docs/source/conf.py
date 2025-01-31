@@ -17,7 +17,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
-    "sphinx.ext.napoleon",
+    "sphinx_copybutton",  # Add "copy to clipboard" buttons to all text/code boxes
     "sphinxcontrib.bibtex",  # Manage bibliography
     "nbsphinx",  # Jupyter Notebook tools for Sphinx
 ]
@@ -41,6 +41,8 @@ html_static_path = ["_static"]
 def setup(app):
     app.add_css_file("my_theme.css")
 
+
+exclude_patterns = ["_build", "**.ipynb_checkpoints", "**.rmd"]
 
 # -- Options for EPUB output
 epub_show_urls = "footnote"
