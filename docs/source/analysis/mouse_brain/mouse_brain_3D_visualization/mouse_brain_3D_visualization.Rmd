@@ -9,7 +9,7 @@ Here, we provide the interactive 3D analysis results in the Allen Mouse Brain Co
 
 **Note**:
 
-1. The `*.nb.html` file is generated from `*.Rmd` file.
+1. The `*.html` file is generated from `*.Rmd` file.
 
 2. `rgl.postscript` does not support opacity feature, thus `alpha` can only be set as 1 when using `rgl.postscript` to save the screenshot.
 
