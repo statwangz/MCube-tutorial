@@ -12,6 +12,7 @@ ArrayExpress with accession number `E-MTAB-11115 <https://www.ebi.ac.uk/biostudi
 .. toctree::
    :maxdepth: 3
    
+   mouse_brain_Visium_rawdata
    mouse_brain_STitch3D
    mouse_brain_MCube
    mouse_brain_3D_visualization/index
