@@ -57,10 +57,10 @@ userMatrix <- c(
 ```
 
 ```{r}
-spots <- (plot3D_data$proportion[, celltype] >= 0.1)
+spots <- (plot3D_data$proportions[, celltype] >= 0.1)
 plot_df <- data.frame(
-  spot = rownames(plot3D_data$proportion)[spots],
-  proportion = plot3D_data$proportion[spots, celltype]
+  spot = rownames(plot3D_data$proportions)[spots],
+  proportion = plot3D_data$proportions[spots, celltype]
 )
 plot_df$spot <- stringr::str_split_fixed(plot_df$spot, "-", 2)[, 1]
 plot_df <- merge(spots.table, plot_df, by = c("spot"))
@@ -75,7 +75,7 @@ spheres3d(plot_df$AP.paxTOallen - 530/2,
           -plot_df$DV * 1000/25 - 320/2,
           plot_df$ML * 1000/25,
           col = "brown1", radius = 5,
-          alpha = 0.75 * plot_df$proportion + 0.25)
+          alpha = 0.75 * plot_df$proportions + 0.25)
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype, ".png")), fmt = "png", webshot = FALSE)
 ```
@@ -159,10 +159,10 @@ userMatrix <- c(
 ```
 
 ```{r}
-spots <- (plot3D_data$proportion[, celltype] >= 0.1)
+spots <- (plot3D_data$proportions[, celltype] >= 0.1)
 plot_df <- data.frame(
-  spot = rownames(plot3D_data$proportion)[spots],
-  proportion = plot3D_data$proportion[spots, celltype]
+  spot = rownames(plot3D_data$proportions)[spots],
+  proportion = plot3D_data$proportions[spots, celltype]
 )
 plot_df$spot <- stringr::str_split_fixed(plot_df$spot, "-", 2)[, 1]
 plot_df <- merge(spots.table, plot_df, by = c("spot"))
@@ -177,7 +177,7 @@ spheres3d(plot_df$AP.paxTOallen - 530/2,
           -plot_df$DV * 1000/25 - 320/2,
           plot_df$ML * 1000/25,
           col = "brown1", radius = 5,
-          alpha = 0.75 * plot_df$proportion + 0.25)
+          alpha = 0.75 * plot_df$proportions + 0.25)
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype, ".png")), fmt = "png", webshot = FALSE)
 ```
