@@ -42,4 +42,5 @@ The R package ``MCube`` is developed by `Zhiwei Wang <https://sites.google.com/v
 Contact
 =======
 
-Please feel free to contact `Zhiwei Wang <zhiwei.wang@connect.ust.hk>`_  or `Prof. Can Yang <macyang@ust.hk>`_ if any inquiries.
+Please feel free to contact `Zhiwei Wang <zhiwei.wang@connect.ust.hk>`_, `Prof. Hongyu Zhao <hongyu.zhao@yale.edu>`_,
+`Prof. Zhixiang Lin <zhixianglin@cuhk.edu.hk>`_, or `Prof. Can Yang <macyang@ust.hk>`_ if any inquiries.
