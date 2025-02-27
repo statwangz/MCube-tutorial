@@ -37,7 +37,7 @@ If you find the ``MCube`` package or any of the source code in this repository u
 Development
 ===========
 
-The R package ``MCube`` is developed by `Zhiwei Wang <https://sites.google.com/view/statwangz>`_.
+The R package ``MCube`` is developed and maintained by `Zhiwei Wang <https://sites.google.com/view/statwangz>`_.
 
 Contact
 =======
