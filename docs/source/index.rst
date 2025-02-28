@@ -12,7 +12,7 @@ The R package ``MCube`` (`GitHub repository <https://github.com/YangLabHKUST/MCu
 **MMM**, standing for the **Mixture of Mixed Models**,
 is a unified framework for statistical identification of cell-type-specific spatially variable genes in spatial transcriptomic (ST) studies.
 
-In this tutorial website, we provide guidelines for using ``MCube`` along with real data analysis examples.
+On this tutorial website, we provide guidelines for using ``MCube`` along with real data analysis examples.
 The source code for building the website can be found at https://github.com/statwangz/MCube-tutorial.
 
 Contents
