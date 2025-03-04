@@ -6,7 +6,7 @@ Pipeline overview
 =================
 
 .. figure:: figures/pipeline.png
-   :width: 720px
+   :width: 960px
    :align: center
    :alt: Pipeline
 
