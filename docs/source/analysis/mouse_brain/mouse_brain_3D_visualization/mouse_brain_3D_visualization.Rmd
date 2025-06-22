@@ -40,7 +40,7 @@ plot3D_data <- readRDS(file.path(RESULT_PATH, "plot3D_data.rds"))
 # demo_celltypes <- c("Ext_Thal_1", "Inh_1")
 # demo_genes <- list(
 #     Ext_Thal_1 = c("Pcp4", "Nrxn3"),
-#     Inh_1 = c("Calb1", "Nsf")
+#     Inh_1 = c("Calb1", "Gnas")
 # )
 ```
 
@@ -85,8 +85,8 @@ gene <- "Pcp4"
 celltype_gene_pair <- paste0(celltype, "_", gene)
 
 u <- plot3D_data$null_models[[celltype_gene_pair]]$u[, celltype]
-rel_expr_level <- ifelse(u >= 0, 1, -1)
-rel_expr_level_all <-c(-1, 1)
+rel_expr_level <- ifelse(u >= 0, "Higher", "Lower")
+rel_expr_level_all <-c("Higher", "Lower")
 
 plot_df <- data.frame(
   spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
@@ -101,7 +101,7 @@ open3d(windowRect = c(0, 0, 1024, 1024))
 view3d(userMatrix = matrix(userMatrix, byrow = TRUE, nrow = 4))
 drawScene.rgl(list(VOLUMESMALL))
 
-palettes = c("#32CD32", "#FF69B4")
+palettes = c("#FF69B4", "#32CD32")
 for (l in 1:length(rel_expr_level_all)){
   spots_idx <- (plot_df$rel_expr_level == rel_expr_level_all[l])
   spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
@@ -109,6 +109,14 @@ for (l in 1:length(rel_expr_level_all)){
             plot_df[spots_idx, ]$ML * 1000/25, 
             col = palettes[l], radius = 5, alpha = 0.75)
 }
+legend3d("bottom",
+         legend = rel_expr_level_all,
+         pch = 16,
+         col = palettes,
+         cex = 5,
+         horiz = TRUE,
+         inset = c(0.02),
+         bty = "n" )
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
 ```
@@ -118,8 +126,8 @@ gene <- "Nrxn3"
 celltype_gene_pair <- paste0(celltype, "_", gene)
 
 u <- plot3D_data$null_models[[celltype_gene_pair]]$u[, celltype]
-rel_expr_level <- ifelse(u >= 0, 1, -1)
-rel_expr_level_all <-c(-1, 1)
+rel_expr_level <- ifelse(u >= 0, "Higher", "Lower")
+rel_expr_level_all <-c("Higher", "Lower")
 
 plot_df <- data.frame(
   spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
@@ -134,7 +142,7 @@ open3d(windowRect = c(0, 0, 1024, 1024))
 view3d(userMatrix = matrix(userMatrix, byrow = TRUE, nrow = 4))
 drawScene.rgl(list(VOLUMESMALL))
 
-palettes = c("#32CD32", "#FF69B4")
+palettes = c("#FF69B4", "#32CD32")
 for (l in 1:length(rel_expr_level_all)){
   spots_idx <- (plot_df$rel_expr_level == rel_expr_level_all[l])
   spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
@@ -142,6 +150,14 @@ for (l in 1:length(rel_expr_level_all)){
             plot_df[spots_idx, ]$ML * 1000/25, 
             col = palettes[l], radius = 5, alpha = 0.75)
 }
+legend3d("bottom",
+         legend = rel_expr_level_all,
+         pch = 16,
+         col = palettes,
+         cex = 5,
+         horiz = TRUE,
+         inset = c(0.02),
+         bty = "n" )
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
 ```
@@ -187,8 +203,8 @@ gene <- "Calb1"
 celltype_gene_pair <- paste0(celltype, "_", gene)
 
 u <- plot3D_data$null_models[[celltype_gene_pair]]$u[, celltype]
-rel_expr_level <- ifelse(u >= 0, 1, -1)
-rel_expr_level_all <-c(-1, 1)
+rel_expr_level <- ifelse(u >= 0, "Higher", "Lower")
+rel_expr_level_all <-c("Higher", "Lower")
 
 plot_df <- data.frame(
   spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
@@ -203,7 +219,7 @@ open3d(windowRect = c(0, 0, 1024, 1024))
 view3d(userMatrix = matrix(userMatrix, byrow = TRUE, nrow = 4))
 drawScene.rgl(list(VOLUMESMALL))
 
-palettes = c("#32CD32", "#FF69B4")
+palettes = c("#FF69B4", "#32CD32")
 for (l in 1:length(rel_expr_level_all)){
   spots_idx <- (plot_df$rel_expr_level == rel_expr_level_all[l])
   spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
@@ -211,17 +227,25 @@ for (l in 1:length(rel_expr_level_all)){
             plot_df[spots_idx, ]$ML * 1000/25, 
             col = palettes[l], radius = 5, alpha = 0.75)
 }
+legend3d("bottom",
+         legend = rel_expr_level_all,
+         pch = 16,
+         col = palettes,
+         cex = 5,
+         horiz = TRUE,
+         inset = c(0.02),
+         bty = "n" )
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
 ```
 
 ```{r}
-gene <- "Nsf"
+gene <- "Gnas"
 celltype_gene_pair <- paste0(celltype, "_", gene)
 
 u <- plot3D_data$null_models[[celltype_gene_pair]]$u[, celltype]
-rel_expr_level <- ifelse(u >= 0, 1, -1)
-rel_expr_level_all <-c(-1, 1)
+rel_expr_level <- ifelse(u >= 0, "Higher", "Lower")
+rel_expr_level_all <-c("Higher", "Lower")
 
 plot_df <- data.frame(
   spot = plot3D_data$null_models[[celltype_gene_pair]]$spots,
@@ -236,7 +260,7 @@ open3d(windowRect = c(0, 0, 1024, 1024))
 view3d(userMatrix = matrix(userMatrix, byrow = TRUE, nrow = 4))
 drawScene.rgl(list(VOLUMESMALL))
 
-palettes = c("#32CD32", "#FF69B4")
+palettes = c("#FF69B4", "#32CD32")
 for (l in 1:length(rel_expr_level_all)){
   spots_idx <- (plot_df$rel_expr_level == rel_expr_level_all[l])
   spheres3d(plot_df[spots_idx, ]$AP.paxTOallen - 530/2, 
@@ -244,6 +268,14 @@ for (l in 1:length(rel_expr_level_all)){
             plot_df[spots_idx, ]$ML * 1000/25, 
             col = palettes[l], radius = 5, alpha = 0.75)
 }
+legend3d("bottom",
+         legend = rel_expr_level_all,
+         pch = 16,
+         col = palettes,
+         cex = 5,
+         horiz = TRUE,
+         inset = c(0.02),
+         bty = "n" )
 # rgl.postscript(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".pdf")), fmt = "pdf")
 snapshot3d(file.path(RESULT_PATH, paste0(celltype_gene_pair, ".png")), fmt = "png", webshot = FALSE)
 ```
