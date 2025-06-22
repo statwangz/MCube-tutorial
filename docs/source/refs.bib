@@ -82,6 +82,7 @@
 @misc{10xGenomics,
   author={10x Genomics},
   title={Visium Spatial Gene Expression},
+  year={2020},
   url={https://www.10xgenomics.com/products/spatial-gene-expression}
 }
 
@@ -133,13 +134,12 @@
 }
 
 ## Visium HD
-@article{oliveira2024characterization,
-  title={Characterization of immune cell populations in the tumor microenvironment of colorectal cancer using high definition spatial profiling},
-  author={Oliveira, Michelli F and Romero, Juan P and Chung, Meii and Williams, Stephen and Gottscho, Andrew D and Gupta, Anushka and Pilipauskas, Susan E and Mohabbat, Syrus and Raman, Nandhini and Sukovich, David and others},
-  journal={bioRxiv},
-  pages={2024--06},
-  year={2024},
-  publisher={Cold Spring Harbor Laboratory}
+@article{oliveira2025high,
+  title={High-definition spatial transcriptomic profiling of immune cell populations in colorectal cancer},
+  author={Oliveira, Michelli Faria de and Romero, Juan Pablo and Chung, Meii and Williams, Stephen R and Gottscho, Andrew D and Gupta, Anushka and Pilipauskas, Susan E and Mohabbat, Seayar and Raman, Nandhini and Sukovich, David J and others},
+  journal={Nature Genetics},
+  year={2025},
+  publisher={Nature Publishing Group}
 }
 
 # SVG reviews
@@ -158,7 +158,7 @@
 @article{li2023benchmarking,
   title={Benchmarking computational methods to identify spatially variable genes and peaks},
   author={Li, Zhijian and Patel, Zain M and Song, Dongyuan and Yan, Guanao and Li, Jingyi Jessica and Pinello, Luca},
-  journal={Biorxiv},
+  journal={bioRxiv},
   year={2023},
   publisher={Cold Spring Harbor Laboratory Preprints}
 }
@@ -166,7 +166,7 @@
 @article{yan2024categorization,
   title={Categorization of 33 computational methods to detect spatially variable genes from spatially resolved transcriptomics data},
   author={Yan, Guanao and Hua, Shuo Harper and Li, Jingyi Jessica},
-  journal={arXiv preprint arXiv:2405.18779},
+  journal={arXiv},
   year={2024}
 }
 
@@ -174,6 +174,8 @@
   title={Recent advances in spatially variable gene detection in spatial transcriptomics},
   author={Adhikari, Sikta Das and Yang, Jiaxin and Wang, Jianrong and Cui, Yuehua},
   journal={Computational and Structural Biotechnology Journal},
+  volume={23},
+  pages={883--891},
   year={2024},
   publisher={Elsevier}
 }
@@ -191,15 +193,26 @@
   publisher={Elsevier}
 }
 
-@article{li2023spatialdm,
-  title={{SpatialDM} for rapid identification of spatially co-expressed ligand--receptor and revealing cell--cell communication patterns},
-  author={Li, Zhuoxuan and Wang, Tianjie and Liu, Pentao and Huang, Yuanhua},
+@article{dong2025simvi,
+  title={{SIMVI} disentangles intrinsic and spatial-induced cellular states in spatial omics data},
+  author={Dong, Mingze and Su, David G and Kluger, Harriet and Fan, Rong and Kluger, Yuval},
   journal={Nature Communications},
-  volume={14},
+  volume={16},
   number={1},
-  pages={3995},
-  year={2023},
+  pages={2990},
+  year={2025},
   publisher={Nature Publishing Group UK London}
+}
+
+@article{fischer2023modeling,
+  title={Modeling intercellular communication in tissues using spatial graphs of cells},
+  author={Fischer, David S and Schaar, Anna C and Theis, Fabian J},
+  journal={Nature Biotechnology},
+  volume={41},
+  number={3},
+  pages={332--336},
+  year={2023},
+  publisher={Nature Publishing Group US New York}
 }
 
 @article{mason2024niche,
@@ -224,13 +237,26 @@
   publisher={Elsevier}
 }
 
-@article{song2024spatially,
+@article{song2025spatially,
   title={Spatially resolved mapping of cells associated with human complex traits},
   author={Song, Liyang and Chen, Wenhao and Hou, Junren and Guo, Minmin and Yang, Jian},
-  journal={medRxiv},
-  pages={2024--10},
-  year={2024},
-  publisher={Cold Spring Harbor Laboratory Press}
+  journal={Nature},
+  volume={641},
+  number={8064},
+  pages={932--941},
+  year={2025},
+  publisher={Nature Publishing Group}
+}
+
+@article{hu2023deciphering,
+  title={Deciphering tumor ecosystems at super resolution from spatial transcriptomics with {TESLA}},
+  author={Hu, Jian and Coleman, Kyle and Zhang, Daiwei and Lee, Edward B and Kadara, Humam and Wang, Linghua and Li, Mingyao},
+  journal={Cell Systems},
+  volume={14},
+  number={5},
+  pages={404--417},
+  year={2023},
+  publisher={Elsevier}
 }
 
 # Compared methods
@@ -327,7 +353,11 @@
   title={Statistical identification of cell type-specific spatially variable genes in spatial transcriptomics},
   author={Shang, Lulu and Wu, Peijun and Zhou, Xiang},
   journal={Nature Communications},
-  year={in press}
+  volume={16},
+  number={1},
+  pages={1059},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
 }
 
 # Cell type deconvolution
@@ -510,7 +540,29 @@
   publisher={JSTOR}
 }
 
-# Test
+# Score test
+
+@article{self1987asymptotic,
+  title={Asymptotic properties of maximum likelihood estimators and likelihood ratio tests under nonstandard conditions},
+  author={Self, Steven G and Liang, Kung-Yee},
+  journal={Journal of the American Statistical Association},
+  volume={82},
+  number={398},
+  pages={605--610},
+  year={1987},
+  publisher={Taylor \& Francis}
+}
+
+@article{lin1997variance,
+  title={Variance component testing in generalised linear models with random effects},
+  author={Lin, Xihong},
+  journal={Biometrika},
+  volume={84},
+  number={2},
+  pages={309--326},
+  year={1997},
+  publisher={Oxford University Press}
+}
 
 @article{wu2011rare,
   title={Rare-variant association testing for sequencing data with the sequence kernel association test},
@@ -532,16 +584,6 @@
   pages={57--74},
   year={2003},
   publisher={Oxford University Press}
-}
-
-@article{liu2008estimation,
-  title={Estimation and testing for the effect of a genetic pathway on a disease outcome using logistic kernel machine regression via logistic mixed models},
-  author={Liu, Dawei and Ghosh, Debashis and Lin, Xihong},
-  journal={BMC Bioinformatics},
-  volume={9},
-  pages={1--11},
-  year={2008},
-  publisher={Springer}
 }
 
 @article{davies1980distribution,
@@ -667,6 +709,17 @@
   number={5},
   pages={661--671},
   year={2022},
+  publisher={Nature Publishing Group US New York}
+}
+
+@article{furth2018interactive,
+  title={An interactive framework for whole-brain maps at cellular resolution},
+  author={F{\"u}rth, Daniel and Vaissi{\`e}re, Thomas and Tzortzi, Ourania and Xuan, Yang and M{\"a}rtin, Antje and Lazaridis, Iakovos and Spigolon, Giada and Fisone, Gilberto and Tomer, Raju and Deisseroth, Karl and others},
+  journal={Nature Neuroscience},
+  volume={21},
+  number={1},
+  pages={139--149},
+  year={2018},
   publisher={Nature Publishing Group US New York}
 }
 
@@ -804,18 +857,28 @@
   publisher={Nature Publishing Group UK London}
 }
 
-@article{yu2024unified,
-  title={A unified framework for cell-type-specific {eQTLs} prioritization by integrating bulk and {scRNA-seq} data},
-  author={Yu, Xinyi and Hu, Xianghong and Wan, Xiaomeng and Zhang, Zhiyong and Cai, Mingxuan and Yu, Tianwei and Xiao, Jiashun},
-  journal={medRxiv},
-  pages={2024--05},
-  year={2024},
-  publisher={Cold Spring Harbor Laboratory Press}
+@article{yu2025unified,
+  title={A unified framework for cell-type-specific {eQTL} prioritization by integrating bulk and {scRNA-seq} data},
+  author={Yu, Xinyi and Hu, Xianghong and Wan, Xiaomeng and Zhang, Zhiyong and Wan, Xiang and Cai, Mingxuan and Yu, Tianwei and Xiao, Jiashun},
+  journal={The American Journal of Human Genetics},
+  volume={112},
+  number={2},
+  pages={332--352},
+  year={2025},
+  publisher={Elsevier}
+}
+
+@article{dorans2025linking,
+  title={Linking regulatory variants to target genes by integrating single-cell multiome methods and genomic distance},
+  author={Dorans, Elizabeth and Jagadeesh, Karthik and Dey, Kushal and Price, Alkes L},
+  journal={Nature Genetics},
+  year={2025},
+  publisher={Nature Publishing Group}
 }
 
 @article{bulik2015ld,
   title={{LD Score} regression distinguishes confounding from polygenicity in genome-wide association studies},
-  author={Bulik-Sullivan, Brendan K and Loh, Po-Ru and Finucane, Hilary K and Ripke, Stephan and Yang, Jian and Schizophrenia Working Group of the Psychiatric Genomics Consortium and Patterson, Nick and Daly, Mark J and Price, Alkes L and Neale, Benjamin M},
+  author={Bulik-Sullivan, Brendan K and Loh, Po-Ru and Finucane, Hilary K and Ripke, Stephan and Yang, Jian and {Schizophrenia Working Group of the Psychiatric Genomics Consortium and Patterson}, Nick and Daly, Mark J and Price, Alkes L and Neale, Benjamin M},
   journal={Nature Genetics},
   volume={47},
   number={3},
@@ -872,7 +935,7 @@
 
 @article{encode2012integrated,
   title={An integrated encyclopedia of {DNA} elements in the human genome},
-  author={The ENCODE Project Consortium},
+  author={{The ENCODE Project Consortium}},
   journal={Nature},
   volume={489},
   number={7414},
@@ -894,7 +957,7 @@
 
 @article{fantom2014promoter,
   title={A promoter-level mammalian expression atlas},
-  author={The FANTOM Consortium and the RIKEN PMI and CLST (DGT)},
+  author={{The FANTOM Consortium and the RIKEN PMI and CLST (DGT)}},
   journal={Nature},
   volume={507},
   number={7493},
@@ -1005,13 +1068,49 @@
 
 ### Cell segmentation and annotation
 
+@article{stringer2021cellpose,
+  title={Cellpose: a generalist algorithm for cellular segmentation},
+  author={Stringer, Carsen and Wang, Tim and Michaelos, Michalis and Pachitariu, Marius},
+  journal={Nature Methods},
+  volume={18},
+  number={1},
+  pages={100--106},
+  year={2021},
+  publisher={Nature Publishing Group US New York}
+}
+
+@article{petukhov2022cell,
+  title={Cell segmentation in imaging-based spatial transcriptomics},
+  author={Petukhov, Viktor and Xu, Rosalind J and Soldatov, Ruslan A and Cadinu, Paolo and Khodosevich, Konstantin and Moffitt, Jeffrey R and Kharchenko, Peter V},
+  journal={Nature Biotechnology},
+  volume={40},
+  number={3},
+  pages={345--354},
+  year={2022},
+  publisher={Nature Publishing Group US New York}
+}
+
 @article{chen2024ucs,
   title={{UCS}: A Unified Approach to Cell Segmentation for Subcellular Spatial Transcriptomics},
   author={Chen, Yuheng and Xu, Xin and Wan, Xiaomeng and Xiao, Jiashun and Yang, Can},
   journal={Small Methods},
+  volume={9},
+  number={5},
   pages={2400975},
   year={2025},
   publisher={Wiley Online Library}
+
+}
+
+@article{lopez2018deep,
+  title={Deep generative modeling for single-cell transcriptomics},
+  author={Lopez, Romain and Regier, Jeffrey and Cole, Michael B and Jordan, Michael I and Yosef, Nir},
+  journal={Nature Methods},
+  volume={15},
+  number={12},
+  pages={1053--1058},
+  year={2018},
+  publisher={Nature Publishing Group US New York}
 }
 
 @article{xu2021probabilistic,
@@ -1025,6 +1124,28 @@
 }
 
 ### Biological meaning
+
+@article{varrone2024cellcharter,
+  title={{CellCharter} reveals spatial cell niches associated with tissue remodeling and cell plasticity},
+  author={Varrone, Marco and Tavernari, Daniele and Santamaria-Mart{\'\i}nez, Albert and Walsh, Logan A and Ciriello, Giovanni},
+  journal={Nature Genetics},
+  volume={56},
+  number={1},
+  pages={74--84},
+  year={2024},
+  publisher={Nature Publishing Group US New York}
+}
+
+@article{jin2025cellchat,
+  title={{CellChat} for systematic analysis of cell--cell communication from single-cell transcriptomics},
+  author={Jin, Suoqin and Plikus, Maksim V and Nie, Qing},
+  journal={Nature Protocols},
+  volume={20},
+  number={1},
+  pages={180--219},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
+}
 
 @article{scholzel2000carcinoembryonic,
   title={Carcinoembryonic antigen family members {CEACAM6} and {CEACAM7} are differentially expressed in normal tissues and oppositely deregulated in hyperplastic colorectal polyps and early adenomas},
@@ -1105,6 +1226,30 @@
   publisher={Oxford University Press}
 }
 
+## CRC
+
+@article{martinez2020compendium,
+  title={A compendium of mutational cancer driver genes},
+  author={Mart{\'\i}nez-Jim{\'e}nez, Francisco and Mui{\~n}os, Ferran and Sent{\'\i}s, In{\'e}s and Deu-Pons, Jordi and Reyes-Salazar, Iker and Arnedo-Pac, Claudia and Mularoni, Loris and Pich, Oriol and Bonet, Jose and Kranas, Hanna and others},
+  journal={Nature Reviews Cancer},
+  volume={20},
+  number={10},
+  pages={555--572},
+  year={2020},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{law2024systematic,
+  title={Systematic prioritization of functional variants and effector genes underlying colorectal cancer risk},
+  author={Law, Philip J and Studd, James and Smith, James and Vijayakrishnan, Jayaram and Harris, Bradley T and Mandelia, Maria and Mills, Charlie and Dunlop, Malcolm G and Houlston, Richard S},
+  journal={Nature Genetics},
+  volume={56},
+  number={10},
+  pages={2104--2111},
+  year={2024},
+  publisher={Nature Publishing Group US New York}
+}
+
 ## Fly
 
 @article{wang2022high,
@@ -1134,7 +1279,8 @@
   author={Tomancak, Pavel and Beaton, Amy and Weiszmann, Richard and Kwan, Elaine and Shu, ShengQiang and Lewis, Suzanna E and Richards, Stephen and Ashburner, Michael and Hartenstein, Volker and Celniker, Susan E and others},
   journal={Genome Biology},
   volume={3},
-  pages={1--14},
+  number={12},
+  pages={research0088.1},
   year={2002},
   publisher={Springer}
 }
@@ -1144,7 +1290,8 @@
   author={Tomancak, Pavel and Berman, Benjamin P and Beaton, Amy and Weiszmann, Richard and Kwan, Elaine and Hartenstein, Volker and Celniker, Susan E and Rubin, Gerald M},
   journal={Genome Biology},
   volume={8},
-  pages={1--24},
+  number={7},
+  pages={R145},
   year={2007},
   publisher={Springer}
 }
@@ -1194,6 +1341,19 @@
 }
 
 # Discussion
+
+## Modelling count data
+
+@article{shim2024multiscale,
+  title={Multiscale {Poisson} process approaches for detecting and estimating differences from high-throughput sequencing assays},
+  author={Shim, Heejung and Xing, Zhengrong and Pantaleo, Ester and Luca, Francesca and Pique-Regi, Roger and Stephens, Matthew},
+  journal={The Annals of Applied Statistics},
+  volume={18},
+  number={3},
+  pages={1773--1788},
+  year={2024},
+  publisher={Institute of Mathematical Statistics}
+}
 
 ## Low-rank
 
@@ -1245,9 +1405,19 @@
   title={{INSPIRE}: interpretable, flexible and spatially-aware integration of multiple spatial transcriptomics datasets from diverse sources},
   author={Zhao, Jia and Zhang, Xiangyu and Wang, Gefei and Lin, Yingxin and Liu, Tianyu and Chang, Rui and Zhao, Hongyu},
   journal={bioRxiv},
-  pages={2024--09},
   year={2024},
   publisher={Cold Spring Harbor Laboratory}
+}
+
+@article{acharyya2022spacex,
+  title={{SpaceX}: gene co-expression network estimation for spatial transcriptomics},
+  author={Acharyya, Satwik and Zhou, Xiang and Baladandayuthapani, Veerabhadran},
+  journal={Bioinformatics},
+  volume={38},
+  number={22},
+  pages={5033--5041},
+  year={2022},
+  publisher={Oxford University Press}
 }
 
 ## GCN
@@ -1306,6 +1476,27 @@
   publisher={Taylor \& Francis}
 }
 
+# Computation
+
+@Manual{nakano2023rhpcblasctl,
+    title = {RhpcBLASctl: Control the Number of Threads on 'BLAS'},
+    author = {Junji Nakano and Ei-ji Nakama},
+    year = {2023},
+    note = {R package version 0.23-42},
+    url = {https://prs.ism.ac.jp/~nakama/Rhpc/},
+}
+
+@article{prive2018efficient,
+  title={Efficient analysis of large-scale genome-wide data with two {R} packages: bigstatsr and bigsnpr},
+  author={Priv{\'e}, Florian and Aschard, Hugues and Ziyatdinov, Andrey and Blum, Michael GB},
+  journal={Bioinformatics},
+  volume={34},
+  number={16},
+  pages={2781--2787},
+  year={2018},
+  publisher={Oxford University Press}
+}
+
 # GWAS data
 
 @article{bellenguez2022new,
@@ -1338,6 +1529,17 @@
   number={9},
   pages={1339--1348},
   year={2019},
+  publisher={Nature Publishing Group US New York}
+}
+
+@article{watanabe2022genome,
+  title={Genome-wide meta-analysis of insomnia prioritizes genes associated with metabolic and psychiatric pathways},
+  author={Watanabe, Kyoko and Jansen, Philip R and Savage, Jeanne E and Nandakumar, Priyanka and Wang, Xin and Hinds, David A and Gelernter, Joel and Levey, Daniel F and Polimanti, Renato and others},
+  journal={Nature Genetics},
+  volume={54},
+  number={8},
+  pages={1125--1132},
+  year={2022},
   publisher={Nature Publishing Group US New York}
 }
 
