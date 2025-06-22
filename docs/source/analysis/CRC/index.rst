@@ -10,7 +10,7 @@ and the GEO DataSets database with accession number `GSE280318 <https://www.ncbi
    :maxdepth: 3
    
    CRC_MCube_Visium
-   CRC_MCube_Visium_HD
+   CRC_MCube_VisiumHD
    CRC_MCube_Xenium
 
 .. bibliography::
