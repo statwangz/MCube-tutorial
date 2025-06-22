@@ -24,3 +24,11 @@ and ``iterators`` (https://cran.r-project.org/package=iterators) are required:
 .. code-block:: r
 
   install.packages(c("doParallel", "foreach", "iterators"))
+
+To handle matrices that are too large to load in memory
+though memory-mapping to binary files on disk,
+the R package ``bigstatsr`` (https://cran.r-project.org/package=bigstatsr) is required:
+
+.. code-block:: r
+
+  install.packages("bigstatsr")
