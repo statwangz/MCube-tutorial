@@ -17,6 +17,7 @@ ArrayExpress with accession number `E-MTAB-11115 <https://www.ebi.ac.uk/biostudi
    mouse_brain_MCube
    mouse_brain_3D_visualization/index
    mouse_brain_rotation
+   mouse_brain_MCube_reliability
 
 .. bibliography::
    :filter: {"analysis/mouse_brain/index"} & docnames
