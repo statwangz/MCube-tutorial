@@ -10,7 +10,7 @@ Welcome to MCube's documentation!
 
 The R package ``MCube`` (`GitHub repository <https://github.com/YangLabHKUST/MCube>`_) implements the methods in the **MMM** paper.
 **MMM**, standing for the **Mixture of Mixed Models**,
-is a unified framework for statistical identification of cell-type-specific spatially variable genes in spatial transcriptomic (ST) studies.
+is a unified framework for the statistical identification of cell-type-specific spatially variable genes in spatial transcriptomic (ST) studies.
 
 Beginning with the raw count data, **MMM** uses a log-mixture structure to account for cell type composition
 while simultaneously correcting for the spot and platform effects between ST and single‐cell RNA sequencing (scRNA-seq) data.
@@ -30,6 +30,7 @@ Contents
    installation.rst
    usage.rst
    analysis/index.rst
+   MCube_RCTD
 
 Reference
 =========
