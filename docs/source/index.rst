@@ -30,7 +30,7 @@ Contents
    installation.rst
    usage.rst
    analysis/index.rst
-   MCube_RCTD
+   RCTD/index.rst
 
 Reference
 =========
