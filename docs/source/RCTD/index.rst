@@ -1,6 +1,6 @@
-============================================================
-Integration of ``MCube`` and ``RCTD`` using one line of code
-============================================================
+================================================
+Integration with ``RCTD`` using one line of code
+================================================
 
 We provide the ``MCube::mcubeRCTD()`` function to integrate ``MCube`` with the cell type deconvolution results from ``RCTD`` :cite:p:`cable2022robust` (https://github.com/dmcable/spacexr) in just one line of code.
 Note that the choice of the ``RCTD`` mode determines the analysis strategy of ``MCube``:
