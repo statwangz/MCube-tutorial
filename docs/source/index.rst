@@ -39,7 +39,7 @@ If you find the ``MCube`` package or any of the source code in this repository u
 
    | A unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies.
    | Zhiwei Wang, Yeqin Zeng, Ziyue Tan, Yuheng Chen, Xinrui Huang, Hongyu Zhao, Zhixiang Lin, and Can Yang.
-   | Under review, 2025.
+   | *Proceedings of the National Academy of Sciences of the United States of America*, in press.
 
 Development
 ===========
