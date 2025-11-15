@@ -38,7 +38,7 @@ Cell-type-specific SVG identification
 =====================================
 
 With the deconvolution results, we can identify cell-type-specific SVGs by applying ``MCube``.
-Please see more examples in :doc:`/analysis/index`.
+Please see the examples in :doc:`/analysis/index`.
 
 .. bibliography::
     :filter: {"usage"} & docnames
