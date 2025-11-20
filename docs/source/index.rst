@@ -16,8 +16,10 @@ MMM's effectiveness comes from our innovations in model and algorithm design:
 
 * Beginning with the raw count data, MMM uses a **log-mixture structure** to account for cell type composition
 while simultaneously correcting for the spot and platform effects between ST and single‐cell RNA sequencing (scRNA-seq) data.
+
 * The **mixed-effects model** decomposes the cell-type-specific gene expression in ST data into three components:
 the average gene expression of the same cell type obtained from scRNA-seq data, spatial variations, and non-spatial variations.
+
 * The statistical significance of spatial variations is then examined using a powerful **non-parametric test** capable of detecting diverse spatial patterns.
 
 On this tutorial website, we provide guidelines for using ``MCube`` along with real data analysis examples.
