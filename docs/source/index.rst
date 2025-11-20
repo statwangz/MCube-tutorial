@@ -12,7 +12,7 @@ The R package ``MCube`` (`GitHub repository <https://github.com/YangLabHKUST/MCu
 **MMM**, standing for the **Mixture of Mixed Models**,
 is a unified framework for the statistical identification of cell-type-specific spatially variable genes in spatial transcriptomic (ST) studies.
 
-MMM's effectiveness comes from our innovations in model and algorithm design:
+MMM's effectiveness stems from our innovations in model and algorithm design:
 
 * Beginning with the raw count data, MMM uses a **log-mixture structure** to account for cell type composition while simultaneously correcting for the spot and platform effects between ST and single‐cell RNA sequencing (scRNA-seq) data.
 * The **mixed-effects model** decomposes the cell-type-specific gene expression in ST data into three components: the average gene expression of the same cell type obtained from scRNA-seq data, spatial variations, and non-spatial variations.
