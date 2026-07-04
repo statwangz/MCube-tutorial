@@ -2,7 +2,7 @@
 Integration with ``RCTD`` using one line of code
 ================================================
 
-We provide the ``MCube::mcubeRCTD()`` function to integrate ``MCube`` with the cell type deconvolution results from ``RCTD`` :cite:p:`cable2022robust` (https://github.com/dmcable/spacexr) in just one line of code.
+We provide the ``MCube::mcubeRCTD()`` function to integrate ``MCube`` with the cell type deconvolution results from ``RCTD`` :cite:p:`cable2022robust` (https://github.com/dmcable/spacexr) in just **one line of code**.
 Note that the choice of the ``RCTD`` mode determines the analysis strategy of ``MCube``:
 
 * For the ST data with low resolution like Visium, we recommend using the ``full`` mode. Then, ``MCube`` will analyze all the cell types of interest together and store the results in a single ``mcube`` object.

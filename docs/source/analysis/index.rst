@@ -1,5 +1,5 @@
 ==================
-Real data analysis
+Real data analyses
 ==================
 
 .. toctree::
